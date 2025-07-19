@@ -1,13 +1,17 @@
+import { Routes, Route } from "react-router-dom";
+import Login from "./pages/Login";
+import Register from "./pages/Register";
+import {Home} from "./components/Home";
 function App() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-indigo-600 to-purple-700 text-white flex items-center justify-center text-4xl font-bold">
-      SkillSync Frontend 🔥
-    </div>
+    <Routes>
+      <Route path="/" element ={<Home/>}/>
+      <Route path="/login" element={<Login />} />
+      <Route path="/register" element={<Register />} />
+    </Routes>
   );
 }
 
 export default App;
-
-
 
 
