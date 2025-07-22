@@ -4,6 +4,8 @@ import Register from "./pages/Register";
 import {Home} from "./components/Home";
 import Profile from "./pages/Profile";
 import Matches from "./pages/Matches";
+import MyTeams from "./pages/MyTeams";
+import CreateTeam from "./pages/CreateTeam";
 function App() {
   return (
     <Routes>
@@ -12,7 +14,8 @@ function App() {
       <Route path="/register" element={<Register />} />
        <Route path="/profile" element={<Profile />} />
        <Route path="/matches" element={<Matches />} />
-
+       <Route path="/create-team" element={<CreateTeam />} />
+        <Route path="/my-teams" element={<MyTeams />} /> 
     </Routes>
   );
 }
